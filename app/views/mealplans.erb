@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Markazi+Text|Merienda" rel="stylesheet">
+    <title>SCS - Meal Plans</title>
+    
+    <style>
+      body {
+  background-color:gray;
+}
+
+a {
+  color:black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  margin-top:50px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.navbar {
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:50px;
+}
+
+.nav {
+  background: pink;
+  width: 20%;
+  height: 30px;
+  float:left;
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  opacity: .9 !important;
+}
+
+.text {
+  margin-left: 4%;
+  margin-top: 25px;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Markazi Text', serif;
+}
+
+h4 {
+  font-family: 'Markazi Text', serif;
+}
+
+h3 {
+  font-family: 'Markazi Text', serif;
+}
+
+h2 {
+  font-size:35px;
+  font-family: 'Merienda', cursive;
+}
+
+#paragraph {
+  width: 60%;
+  float: left;
+}
+
+.image {
+  margin-right:12.5%;
+}
+
+img {
+  float: right;
+  margin-top: 100px;
+  margin-right:7%;
+}
+
+.button {
+  margin-left:8%;
+}
+
+.image2 {
+  margin-right:16%;
+}
+
+.image3 {
+  margin-right:10%;
+} */
+
+    </style>
+    
+  </head>
+  <body>
+    <h1>Meal Plans</h1>
+      <div class="navbar">
+        <div class="nav">
+          <a href="/"><h4>Home</h4></a>
+        </div>
+        
+        <div class="nav">
+          <a href="/workouts"><h4>Workouts</h4></a>
+        </div>
+        
+        <div class="nav">
+          <a href="/skincare"><h4>Skincare</h4></a>
+        </div>
+        
+        <div class="nav">
+          <a href="/mealplans"><h4>Meal Plans</h4></a>
+        </div>
+      </div>
+    <div id="paragraph">
+       <form method="POST" action="/mealplan">
+          <h2 class="text">Hello! Today, you will take a quiz that will recommend a healthy meal plan for you based on your answers to the following questions.</h2>
+           <h3 class="text">To start with, on a scale of one to five, how much do you want to eat a healthy meal?</h3>
+               <input class="button" type="radio" name="question1" value="1">1<br>
+               <input class="button" type="radio" name="question1" value="2">2<br>
+               <input class="button" type="radio" name="question1" value="3">3<br>
+               <input class="button" type="radio" name="question1" value="4">4<br>
+               <input class="button" type="radio" name="question1" value="5">5<br>
+          
+           <h3 class="text">How much money would you be able to spend on your meal plan?</h3>
+               <input class="button" type="text" name="question2"><br>
+             
+          
+           <h3 class="text">How much time would you be able to spend on preparing your food? 
+           (minutes)</h3>
+               <input class="button" type="text" name="question3"><br>
+            
+              
+           <h3 class="text">What type of meal do you need?</h3>
+               <input class="button" type="radio" name="question4" value="1">breakfast<br>
+               <input class="button" type="radio" name="question4" value="2">lunch<br>
+               <input class="button" type="radio" name="question4" value="3">dinner<br>
+               <input class="button" type="radio" name="question4" value="4">snacks<br>
+
+
+
+           <h3 class="text">Do you have any food restrictions or allergies? If yes, please specify it below.</h3>
+               <input class="button" type="text" name="question5"><br>
+
+            <br>
+
+               <button class="button" type="submit">Submit Your Answers</button>
+          
+       </form>
+    </div>
+            
+    <img class="image" src="http://www.nydailynews.com/resizer/BY2duG5RjLFfOOelIuE-u3P0gOw=/1400x0/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/GTKSJ2FIZDPDHHHC7A6I54NV5M.jpg" alt="" height="210px"/>
+    <img class="image2" src="https://i0.wp.com/68.media.tumblr.com/0c7473529873671e3652b747f0acc17c/tumblr_oovc6txXqR1vwtncyo1_400.gif?w=872" alt="" height="210px"/>
+    <img class="image3" src="https://data.whicdn.com/images/227043099/original.gif" alt="" height="150px"/>
+
+  </body>
+</html>

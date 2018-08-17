@@ -1,3 +1,2 @@
-require './config/environment'
-
-run ApplicationController
+require './app/controllers/application_controller'
+run App
