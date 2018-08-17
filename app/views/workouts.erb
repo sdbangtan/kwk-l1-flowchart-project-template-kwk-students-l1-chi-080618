@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Markazi+Text|Merienda" rel="stylesheet">
+    <title>SCS - Workouts</title>
+    <style>
+      body {
+  background-color:gray;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  margin-top:50px;
+  font-family: 'Dancing Script', cursive;
+}
+
+a {
+  color:black;
+}
+
+.navbar {
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:50px;
+}
+
+.nav {
+  background: pink;
+  width: 20%;
+  height: 30px;
+  float:left;
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  opacity: .9 !important;
+}
+
+.text {
+  margin-left: 4%;
+  margin-top: 25px;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Markazi Text', serif;
+}
+
+h4 {
+  font-family: 'Markazi Text', serif;
+}
+
+h2 {
+  font-size:35px;
+  font-family: 'Merienda', cursive;
+}
+
+h3 {
+  font-family: 'Markazi Text', serif;
+}
+
+#paragraph {
+  width: 60%;
+  float: left;
+}
+
+img {
+  float: right;
+  margin-top: 75px;
+  margin-right:6.5%;
+}
+
+.button {
+  margin-left:8%;
+}
+
+.image2 {
+  margin-right:9.5%;
+}
+
+.image3 {
+  margin-right:7%;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Workouts</h1>
+      <div class="navbar">
+        <div class="nav">
+          <a href="/"><h4>Home</h4></a>
+        </div>
+        
+        <div class="nav">
+          <a href="/workouts"><h4>Workouts</h4></a>
+        </div>
+        
+        <div class="nav">
+          <a href="/skincare"><h4>Skincare</h4></a>
+        </div>
+        
+        <div class="nav">
+          <a href="/mealplans"><h4>Meal Plans</h4></a>
+        </div>
+      </div>
+    <div id="paragraph">
+    
+       <form method="POST" action="/workout">
+          <h2 class="text">Hello! Today, you will take a quiz that will recommend a workout routine (home-friendly) for you based on your answers to the following questions.<h2>
+           <h3 class="text">To begin with, on a scale of one to five, how much do you want to work out?</h3>
+               <input class="button" type="radio" name="question1" value="1">1<br>
+               <input class="button" type="radio" name="question1" value="2">2<br>
+               <input class="button" type="radio" name="question1" value="3">3<br>
+               <input class="button" type="radio" name="question1" value="4">4<br>
+<input class="button" type="radio" name="question1" value="5">5<br>
+          
+             
+          
+           <h3 class="text">How many hours a day do you engage in some sort of physical activity?</h3>
+               <input class="button" type="text" name="question2"><br>
+            
+              
+           <h3 class="text">On a scale of one to five, how intense would you like your workout to be?</h3>
+               <input class="button" type="radio" name="question3" value="1">1<br>
+               <input class="button" type="radio" name="question3" value="2">2<br>
+               <input class="button" type="radio" name="question3" value="3">3<br>
+               <input class="button" type="radio" name="question3" value="4">4<br>
+<input class="button" type="radio" name="question3" value="5">5<br>
+
+
+           <h3 class="text">What body parts(s) would you like to focus on improving?</h3>
+               <input class="button" type="text" name="question4"><br>
+
+            <br>
+
+           <button class="button" type="submit">Submit Your Answers</button>
+          
+       </form>
+
+      </div>
+      <img src="https://78.media.tumblr.com/4e5df3bd1b830ad17deffb0660f0cafc/tumblr_om6xs5EJXy1vq3fhho1_400.gif" alt="" height="220px"/>
+      <img class="image2" src="https://78.media.tumblr.com/b60be7ce487cb2dc7394069c18eaddc8/tumblr_inline_nsvn2o7Nm91snugbt_250.gif" alt="" height="220px"/>
+      <img class="image3" src="https://media1.tenor.com/images/8303335bd6e943fc41f926704211b733/tenor.gif?itemid=5888627" height="200px"/>
+      
+      <br>
+      <br>
+  </body>
+</html>
